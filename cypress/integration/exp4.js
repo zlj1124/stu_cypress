@@ -30,6 +30,7 @@ describe('车辆监控',function(){
 
     it('验证搜索框查询清空功能',function(){
         // 验证搜索框查询清空功能
+        cy.url().should('include', '/monitor')
         cy.get('.ivu-input').type('TESTLIWPHP0111124')
         cy.contains('查询').click()
         cy.get('.ivu-scroll-content > li').should('contain','TESTLIWPHP0111124')

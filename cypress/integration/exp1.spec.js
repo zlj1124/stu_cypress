@@ -1,3 +1,5 @@
+// 前置后置条件和.skip().only()
+
 // -- Start: Our Application Code --
 function add (a, b) {
     return a + b
@@ -49,7 +51,7 @@ function add (a, b) {
         expect(this.a).to.eq('one')
         expect(add(1, 2)).to.eq(3)
       })
-  
+        // skip跳过测试
       it.skip('can subtract numbers', function() {
         expect(subtract(5, 12)).to.eq(-7)
       })

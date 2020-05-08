@@ -1,3 +1,5 @@
+
+// 别名的方式访问fixture里面的
 beforeEach(function () {
     // 对用户的fixtures取个别名
     cy.fixture('example.json').as('users')
