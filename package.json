@@ -1,0 +1,8 @@
+{
+	"scripts": {
+    "cypress": "cypress run",
+ 
+    "cypress:open": "cypress open",
+    "cypress:run": "node_modules/.bin/cypress run"
+  }
+}
